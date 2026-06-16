@@ -5,16 +5,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 1. 加载数据
-url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
-df = pd.read_csv(url)
+# 1. 加载数据（从本地文件）
+df = pd.read_csv("train.csv")
 
 # 2. 数据概览
 print("数据集形状:", df.shape)
 print("\n前5行数据:")
 print(df.head())
-print("\n基本信息:")
-print(df.info())
 
 # 3. 数据清洗
 print("\n缺失值统计:")
