@@ -4,6 +4,11 @@
 """
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
+
+# 解决中文显示问题
+matplotlib.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'SimHei', 'Arial Unicode MS']
+matplotlib.rcParams['axes.unicode_minus'] = False
 
 # 1. 加载数据（从本地文件）
 df = pd.read_csv("train.csv")
